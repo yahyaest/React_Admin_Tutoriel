@@ -1,5 +1,5 @@
 //Middleware Function
 module.exports = (req, res,next)=>{
-    res.header('Content-Range', 'post 0-20/20')
+    res.header('Content-Range', 'posts 0-4/20')
     next()
 }

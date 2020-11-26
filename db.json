@@ -35,6 +35,36 @@
       "title": "Next",
       "body": "Poll Provider",
       "id": "G9y6JYL"
+    },
+    {
+      "title": "React",
+      "publishedAt": "2020-11-08",
+      "body": "frontend",
+      "id": "hUPBdHv"
+    },
+    {
+      "title": "Redux",
+      "body": "VS Code",
+      "publishedAt": "2020-09-17",
+      "id": "DNKpjK5"
+    },
+    {
+      "title": "Django",
+      "body": "backend",
+      "publishedAt": "2019-06-26",
+      "id": "LXeXEB_"
+    },
+    {
+      "title": "Node",
+      "body": "Stand BY",
+      "publishedAt": "2021-02-11",
+      "id": "kCNpeLG"
+    },
+    {
+      "title": "Axios",
+      "body": "HTTP Request",
+      "publishedAt": "2020-09-18",
+      "id": "FS6GvDy"
     }
   ],
   "users": [

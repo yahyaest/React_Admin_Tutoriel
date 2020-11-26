@@ -1,5 +1,5 @@
 import React from 'react'
-import {
+import {Pagination,Filter, TextInput,SearchInput,
   List,
   Datagrid,
   TextField,
@@ -8,9 +8,18 @@ import {
   DeleteButton,
 } from 'react-admin'
 
+const PostPagination = props => <Pagination rowsPerPageOptions={[5, 10, 25, 50, 100]} {...props} />;
+
+const PostFilter = (props) => (
+  <Filter {...props}>
+      <SearchInput source="q" alwaysOn />
+      <TextInput label="Title" source="title" defaultValue="Post" />
+  </Filter>
+);
+
 const PostList = (props) => {
   return (
-    <List {...props}>
+  <List {...props} filters={<PostFilter />}  pagination={<PostPagination />} perPage={5}>
       <Datagrid>
         <TextField source='id' />
         <TextField source='title' />
