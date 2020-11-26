@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Post One",
+      "body": "This is the post body",
+      "publishedAt": "10-01-2020"
+    },
+    {
+      "id": "2",
+      "title": "Post Two",
+      "body": "This is the post body",
+      "publishedAt": "02-02-2020"
+    },
+    {
+      "id": "3",
+      "title": "Post Three",
+      "body": "This is the post body",
+      "publishedAt": "03-03-2020"
+    },
+    {
+      "title": "Post Four",
+      "body": "This is the post body",
+      "publishedAt": "2020-01-01",
+      "id": "xhQcmRS"
+    },
+    {
+      "publishedAt": "2023-03-03",
+      "body": "Test",
+      "title": "Admin",
+      "id": "-h4I0cM"
+    },
+    {
+      "publishedAt": "2020-11-25",
+      "title": "Next",
+      "body": "Poll Provider",
+      "id": "G9y6JYL"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "azerty",
+      "email": "azerty@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "qwerty",
+      "email": "qwerty@gmail.com"
+    }
+  ]
+}
