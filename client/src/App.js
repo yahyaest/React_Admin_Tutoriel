@@ -7,6 +7,9 @@ import PostEdit from './components/PostEdit'
 import UserList from './components/UserList'
 import UserCreate from './components/UserCreate'
 import UserEdit from './components/UserEdit'
+import CommentList from './components/CommentList'
+import CommentCreate from './components/CommentCreate'
+import CommentEdit from './components/CommentEdit'
 
 function App() {
   return (
@@ -22,6 +25,12 @@ function App() {
         list={UserList}
         create={UserCreate}
         edit={UserEdit}
+      />
+      <Resource
+        name='comments'
+        list={CommentList}
+        create={CommentCreate}
+        edit={CommentEdit}
       />
     </Admin>
   )

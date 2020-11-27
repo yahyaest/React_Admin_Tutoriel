@@ -5,7 +5,7 @@ import {Pagination,Filter, TextInput,SearchInput,
   TextField,
   DateField,
   EditButton,
-  DeleteButton,
+  DeleteButton,ReferenceManyField,SingleFieldList,ChipField
 } from 'react-admin'
 
 const PostPagination = props => <Pagination rowsPerPageOptions={[5, 10, 25, 50, 100]} {...props} />;
@@ -24,6 +24,11 @@ const PostList = (props) => {
         <TextField source='id' />
         <TextField source='title' />
         <DateField source='publishedAt' />
+        <ReferenceManyField label="Comments by" reference="comments" target="post_id">
+                <SingleFieldList>
+                    <ChipField source="user.name" />
+                </SingleFieldList>
+            </ReferenceManyField>
         <EditButton basePath='/posts' />
         <DeleteButton basePath='/posts' />
       </Datagrid>

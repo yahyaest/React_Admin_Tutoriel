@@ -1,5 +1,5 @@
 import React from 'react'
-import { Edit, SimpleForm, TextInput, DateInput } from 'react-admin'
+import { Edit, SimpleForm, ReferenceManyField, Datagrid, TextInput, DateInput,TextField,DateField,EditButton } from 'react-admin'
 
 const PostEdit = (props) => {
   return (
@@ -9,6 +9,13 @@ const PostEdit = (props) => {
         <TextInput source='title' />
         <TextInput multiline source='body' />
         <DateInput label='Published' source='publishedAt' />
+        <ReferenceManyField label="Comments" reference="comments" target="post_id">
+                <Datagrid>
+                    <TextField source="body" />
+                    <DateField source="created_at" />
+                    <EditButton />
+                </Datagrid>
+            </ReferenceManyField>
       </SimpleForm>
     </Edit>
   )
